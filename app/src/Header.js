@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
+// Create login icon
 function UserIcon() {
   return (
     <div>
@@ -53,6 +54,7 @@ function UserIcon() {
   )
 }
 
+// Initialize menu bar at top of home page
 export default function MenuBar() {
   const classes = useStyles();
 

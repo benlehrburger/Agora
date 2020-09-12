@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuBar from './Header.js';
-import BusinessCard from './BizCard.js';
+import BusinessMenu from './BizMenu.js';
 
 function App() {
   return (
@@ -9,15 +9,9 @@ function App() {
         <MenuBar>
         </MenuBar>
       </div>
-      <h1>
-        Support 💼 Send 💸 Save 💰
-      </h1>
-      <h2>
-        Help your favorite small business. Get money back on each purchase.
-      </h2>
       <div>
-        <BusinessCard>
-        </BusinessCard>
+        <BusinessMenu>
+        </BusinessMenu>
       </div>
     </div>
   );
