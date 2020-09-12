@@ -4,7 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import { ThemeProvider } from '@material-ui/styles';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -12,7 +11,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import IconButton from '@material-ui/core/IconButton';
-import { green } from '@material-ui/core/colors';
 
 // Define styles
 const useStyles = makeStyles({

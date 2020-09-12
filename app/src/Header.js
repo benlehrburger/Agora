@@ -66,7 +66,7 @@ export default function MenuBar() {
       theme={theme}
     >
       <AppBar 
-        position="static" 
+        position="fixed" 
         color="secondary"
       >
         <Toolbar>
