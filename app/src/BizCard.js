@@ -11,6 +11,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import IconButton from '@material-ui/core/IconButton';
+import LoanPage from './loan.js';
+import Slide from '@material-ui/core/Slide';
+import { TransitionProps } from '@material-ui/core';
+import Dialog from '@material-ui/core/Dialog';
+
 
 // Define styles
 const useStyles = makeStyles({
@@ -54,6 +59,14 @@ const theme = createMuiTheme({
   },
 });
 
+// Initialize dialog open transition
+const Transition = React.forwardRef(function Transition(
+  props: TransitionProps & { children?: React.ReactElement },
+  ref: React.Ref<unknown>,
+) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
 // Initialize function to create single business card
 export default function BusinessCard(props) {
   const classes = useStyles();
@@ -62,6 +75,15 @@ export default function BusinessCard(props) {
   const location = props.location;
   const quote = props.quote;
   const discount = props.discount;
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+      setOpen(true);
+  };
+
+  const handleClose = () => {
+      setOpen(false);
+  };
 
   return (
     <Card className={classes.root}>
@@ -92,12 +114,15 @@ export default function BusinessCard(props) {
             <FavoriteIcon />
           </IconButton>
         </div>
-        <div> 
+        <div>
           <Typography color='primary'>
-            <Button className={classes.save}>
+            <Button className={classes.save} onClick={handleOpen}>
               Save {discount}
               <ChevronRightIcon/>
             </Button>
+            <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
+              <LoanPage />
+            </Dialog>
           </Typography>
         </div>
       </CardActions>

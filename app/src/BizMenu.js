@@ -9,6 +9,8 @@ import BusinessCard from './BizCard.js';
 import dirtCowboy from './dirtCowboy.jpg';
 import lous from './lous.jpg';
 import stillNorth from './stillNorth.jpg'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+
 
 // Define styles
 const useStyles = makeStyles((theme) =>
@@ -46,6 +48,18 @@ const useStyles = makeStyles((theme) =>
     },
   }),
 );
+
+// Change default color palette
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#46BE4B',
+    },
+    secondary: {
+      main: "#FFFFFF",
+    },
+  },
+});
 
 // Create array for Small Businesses Near You
 const tileData = [
@@ -93,7 +107,7 @@ export default function BusinessMenu() {
             </GridList>
         </div>
         <div align-items="center" className={classes.explore}>
-            <Typography>
+            <Typography variant="h3">
                 <Button size="large" className={classes.button}>
                     Explore Your Main Street
                     <ChevronRightIcon fontSize="large"/>

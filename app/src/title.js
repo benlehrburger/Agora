@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) =>
       paddingBottom: 40,
       color: '#A3A3A3',
     },
-      boxTop: {
+    boxTop: {
       height: 221,
       width: '33.4%',
       background: 'rgba(70, 190, 75, 0.3)',
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) =>
     text1: {
       display: 'flex',
       flex: 1,
-      paddingTop: 50,
+      paddingTop: 60,
       paddingLeft: 60,
       fontSize: 25,
     },
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) =>
       flex: 1,
       fontSize: 25,
       paddingRight: 60,
-      paddingTop: 50,
+      paddingTop: 60,
     },
     container: {
       fontSize: '0',
@@ -88,7 +88,7 @@ export default function Title() {
                 <img src={sb} width='66.6%' />
                 <Box className={classes.boxTop}>
                     <div padding-left='50'>
-                        <Typography className={classes.text1} variant='body1'>
+                        <Typography className={classes.text1} variant='h2'>
                             Give an upfront<br></br>microloan
                         </Typography>
                         <img src={la} width='60' height='auto' className={classes.arrow1}/>
@@ -96,7 +96,7 @@ export default function Title() {
                 </Box>
                 <Box className={classes.boxBottom}>
                     <div>
-                        <Typography className={classes.text2} variant='body1'>
+                        <Typography className={classes.text2} variant='h2'>
                             Get a longstanding discount
                         </Typography>
                         <img src={ra} width='60' height='auto' className={classes.arrow2}/>
