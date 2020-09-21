@@ -45,10 +45,8 @@ const useStyles = makeStyles((theme) =>
 function UserIcon() {
   return (
     <div>
-      <IconButton
-        color="primary"
-      >
-        <AccountCircle />
+      <IconButton>
+        <AccountCircle style={{ color: '#46BE4B' }} />
       </IconButton>
     </div>
   )
@@ -73,7 +71,7 @@ export default function MenuBar() {
           <IconButton 
             edge="start" 
             className={classes.menuButton} 
-            color="primary"
+            style={{ color: '#46BE4B' }}
           >
             <MenuIcon />
           </IconButton>
@@ -86,10 +84,7 @@ export default function MenuBar() {
             >
             </img>
           </div>
-          <UserIcon 
-            color="primary"
-          >
-          </UserIcon>
+          <UserIcon />
         </Toolbar>
       </AppBar>
     </MuiThemeProvider>
