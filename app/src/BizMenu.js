@@ -29,7 +29,11 @@ const useStyles = makeStyles((theme) =>
       transform: 'translateZ(0)',
     },
     title: {
-      margin: 20,
+      paddingLeft: 20,
+      paddingBottom: 10,
+    },
+    caption: {
+      fontSize: 50,
     },
     link: {
         href: "#",
@@ -45,6 +49,7 @@ const useStyles = makeStyles((theme) =>
     button: {
         textTransform: 'none',
         fontSize: 25,
+        margin: 0,
     },
   }),
 );
@@ -91,29 +96,29 @@ export default function BusinessMenu() {
     const classes = useStyles();
 
     return (
-        <div>
-        <div className={classes.title}>
-            <Typography variant="h2">
-                Small Businesses Near You 
-            </Typography>
-        </div>
-        <div className={classes.root}>
-            <GridList className={classes.gridList} cols={2.5} cellHeight='400'>
-                {tileData.map((tile) => (
-                <GridListTile key={tile.name}>
-                    <BusinessCard img={tile.img} name={tile.name} location={tile.location} quote={tile.quote} discount={tile.discount}></BusinessCard>
-                </GridListTile>
-                ))}
-            </GridList>
-        </div>
-        <div align-items="center" className={classes.explore}>
-            <Typography variant="h3">
-                <Button size="large" className={classes.button}>
-                    Explore Your Main Street
-                    <ChevronRightIcon fontSize="large"/>
-                </Button>
-            </Typography>
-        </div>
+        <div style={{ paddingLeft: 20 }}>
+          <div className={classes.title}>
+              <Typography className={classes.caption} variant='h2'>
+                  Small Businesses Near You 
+              </Typography>
+          </div>
+          <div className={classes.root}>
+              <GridList className={classes.gridList} cols={2.5} cellHeight='400'>
+                  {tileData.map((tile) => (
+                  <GridListTile key={tile.name}>
+                      <BusinessCard img={tile.img} name={tile.name} location={tile.location} quote={tile.quote} discount={tile.discount}></BusinessCard>
+                  </GridListTile>
+                  ))}
+              </GridList>
+          </div>
+          <div align-items="center" className={classes.explore}>
+              <Typography variant="h3">
+                  <Button size="large" className={classes.button}>
+                      Explore Your Main Street
+                      <ChevronRightIcon fontSize="large"/>
+                  </Button>
+              </Typography>
+          </div>
         </div>        
     )
 }

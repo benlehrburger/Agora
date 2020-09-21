@@ -3,6 +3,7 @@ import MenuBar from './Header.js';
 import Title from './title.js';
 import BusinessMenu from './BizMenu.js';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
+import Footer from './footer.js';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -34,6 +35,9 @@ function App() {
         </BusinessMenu>
       </div>
       <div className={classes.divider}>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

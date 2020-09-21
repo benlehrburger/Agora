@@ -15,13 +15,18 @@ import Slide from '@material-ui/core/Slide';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import LoanTable from './loanTable.js'
 import MenuBar from './Header.js';
-
+import BusinessBio from './businessBio.js';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
     table: {
       paddingTop: 70,
-    }
+      paddingBottom: 20,
+    },
+    container: {
+        width: '935px',
+        margin: 'auto',
+    },
   }),
 );
 
@@ -29,12 +34,13 @@ export default function LoanPage() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.container}>
       <div>
         <MenuBar>
         </MenuBar>
       </div>
       <div className={classes.table}>
+        <BusinessBio />
         <LoanTable />
       </div>
     </div>
