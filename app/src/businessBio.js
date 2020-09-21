@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) =>
         top: 66,
         left: 17,
         width: '83%',
+        paddingTop: 10,
     },
     container: {
         position: 'relative',
@@ -52,7 +53,7 @@ const useStyles = makeStyles((theme) =>
     },
     button: {
         paddingLeft: 145,
-        paddingTop: 10,
+        paddingTop: 5,
     },
     para: {
         margin: 5,
@@ -84,10 +85,10 @@ export default function BusinessBio() {
                     <Typography style={{ margin: 0, paddingTop: 46, paddingBottom: 15, fontSize: '25px' }}>
                         Where's the Money Going?
                     </Typography>
-                    <div className={classes.container}>
-                        <img src={quotes} width='90%' style={{ margin: 0 }}/>
+                    <div className={classes.container} style={{ paddingTop: 8 }}>
+                        <img src={quotes} width='80%' style={{ margin: 0 }}/>
                         <div className={classes.quotes}>
-                        We're struggling to scrape money together for rent during the summer offseason. We would love to stay in Hanover, but may soon be left with no choice but to take business elsewhere. We would sincerely appreciate a microloan of $6000 to help us stay in this town near and dear to our hearts.
+                        We're struggling to scrape money together for rent during the summer offseason. We would sincerely appreciate a microloan of $6000 to help us stay in <br></br>this town near and dear to our hearts.
                         </div>
                     </div>
                 </div>
@@ -114,7 +115,7 @@ export default function BusinessBio() {
                             👫 Owned by Chris and Layla
                         </p>
                         <p className={classes.para} style={{ paddingRight: 10, paddingTop: 5 }}>
-                            ⚙️ Founded to give Hanover a locally-sourced coffee shop and a cozy spot for college students and community members to connect
+                            ⚙️ Founded to give Hanover a locally-sourced coffee <br></br>shop and a cozy spot for college students and community members to connect
                         </p>
                     </div>
                     <div className={classes.button}>

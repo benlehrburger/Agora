@@ -72,14 +72,14 @@ const tileData = [
         img: dirtCowboy,
         name: "Dirt Cowboy Cafe",
         location: "Hanover, NH",
-        quote: '"When COVID-19 first struck, we were able to stay afloat despite the dip in sales. Now, we\'re struggling to even scrape money together for rent."',
+        quote: '"We\'re struggling to scrape money together for rent during the summer offseason. We would sincerely appreciate a microloan of $6000 to help us stay in this town near and dear to our hearts."',
         discount: "15%",
     },
     {
         img: lous,
         name: "Lou's Bakery",
         location: "Hanover, NH",
-        quote: '"We\'ve been a town staple since \'47 and this is the first time since then that we\'ve faced going under. We\'d appreciate some assistance paying our staff in full this month."',
+        quote: '"We\'ve been a town staple since \'47 and this is the first time since then that money has been tight. We\'d appreciate some assistance paying our staff in full this month."',
         discount: "10%",
     },
     {
