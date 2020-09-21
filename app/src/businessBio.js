@@ -95,8 +95,8 @@ export default function BusinessBio() {
             </div>
             <div className={classes.columnRight}>
                 <div>
-                    <div style={{ paddingTop: 10 }}>
-                        <Box boxShadow={1} style={{ height: '288px' }}>
+                    <div style={{ paddingTop: 18 }}>
+                        <Box boxShadow={1} style={{ width: '420px', height: '280px' }}>
                             <img src={dirtOwners} width='100%' height='100%' />
                         </Box>
                     </div>
@@ -115,7 +115,7 @@ export default function BusinessBio() {
                             👫 Owned by Chris and Layla
                         </p>
                         <p className={classes.para} style={{ paddingRight: 10, paddingTop: 5 }}>
-                            ⚙️ Founded to give Hanover a locally-sourced coffee <br></br>shop and a cozy spot for college students and community members to connect
+                            ⚙️ Founded to give Hanover a locally-sourced coffee <br></br>shop and a cozy spot for college students and <br></br>community members to connect
                         </p>
                     </div>
                     <div className={classes.button}>

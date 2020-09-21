@@ -47,7 +47,7 @@ export default function Title() {
                     With Agora's community based microlending solution.
                 </Typography>
             </div>
-            <div>
+            <div style={{ paddingTop: 10 }}>
               <Steps />
             </div>
         </div>
