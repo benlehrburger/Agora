@@ -36,7 +36,9 @@ const useStyles = makeStyles({
   },
   save: {
     position: 'absolute',
-    bottom: 10,
+    textTransform: 'none',
+    fontSize: '16px',
+    bottom: 8,
     right: 10,
     color: '#46BE4B',
   },
@@ -117,7 +119,7 @@ export default function BusinessCard(props) {
         <div>
           <Typography color='primary'>
             <Button className={classes.save} onClick={handleOpen}>
-              Save {discount}
+              Pitch In
               <ChevronRightIcon/>
             </Button>
             <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
